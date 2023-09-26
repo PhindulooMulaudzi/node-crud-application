@@ -43,7 +43,8 @@ Ensure you have the following prerequisites installed before running the applica
 
 2. Create a table named `items` in the MySQL database with the following structure:
 
-   ```CREATE TABLE `employee_system`.`employees` (
+   ```sql
+   CREATE TABLE `employee_system`.`employees` (
   `idemployees` INT NOT NULL AUTO_INCREMENT,
   `name` TEXT(255) NOT NULL,
   `age` INT NOT NULL,
@@ -51,7 +52,6 @@ Ensure you have the following prerequisites installed before running the applica
   `position` TEXT(255) NOT NULL,
   `wage` INT NOT NULL,
   PRIMARY KEY (`idemployees`));
-
    ```
 
 ## Running the Application
