@@ -44,14 +44,14 @@ Ensure you have the following prerequisites installed before running the applica
 2. Create a table named `items` in the MySQL database with the following structure:
 
    ```sql
-   CREATE TABLE `employee_system`.`employees` (
-  `idemployees` INT NOT NULL AUTO_INCREMENT,
-  `name` TEXT(255) NOT NULL,
-  `age` INT NOT NULL,
-  `country` TEXT(255) NOT NULL,
-  `position` TEXT(255) NOT NULL,
-  `wage` INT NOT NULL,
-  PRIMARY KEY (`idemployees`));
+   CREATE TABLE employees (
+   idemployees INT AUTO_INCREMENT PRIMARY KEY,
+   name VARCHAR(255) NOT NULL,
+   age INT NOT NULL,
+   country VARCHAR(255) NOT NULL,
+   position VARCHAR(255) NOT NULL,
+   wage INT NOT NULL
+   );
    ```
 
 ## Running the Application
