@@ -44,10 +44,13 @@ Ensure you have the following prerequisites installed before running the applica
 2. Create a table named `items` in the MySQL database with the following structure:
 
    ```sql
-   CREATE TABLE items (
-     id INT AUTO_INCREMENT PRIMARY KEY,
-     name VARCHAR(255) NOT NULL,
-     description TEXT
+   CREATE TABLE employees (
+   idemployees INT AUTO_INCREMENT PRIMARY KEY,
+   name VARCHAR(255) NOT NULL,
+   age INT NOT NULL,
+   country VARCHAR(255) NOT NULL,
+   position VARCHAR(255) NOT NULL,
+   wage INT NOT NULL
    );
    ```
 
@@ -81,10 +84,6 @@ Ensure you have the following prerequisites installed before running the applica
 - Express.js
 - React
 - MySQL
-
-## Contributing
-
-Feel free to contribute to this project by creating pull requests or reporting issues.
 
 ## License
 
